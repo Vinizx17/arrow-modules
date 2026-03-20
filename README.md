@@ -7,7 +7,7 @@ Arrow Modules (`arrow_modules`) provides **pipeline accelerators** for working w
 - **Database connectors**: PostgreSQL, MySQL, SQL Server (via SQLAlchemy)
 - **Database extractors**: Extract tables in chunks into PyArrow Tables
 - **Cloud storage connectors**: AWS S3 (boto3), Azure Blob Storage, GCS
-- **Cloud storage extractors**: Extract files (CSV, Parquet, Avro, ORC, JSON, XML, TXT) into PyArrow Tables
+- **Cloud storage extractors**: Extract files (CSV, Parquet, ORC, JSON, XML, TXT) into PyArrow Tables
 - **PyArrow Table writer**: Write PyArrow Tables to local or cloud storage in multiple formats (Parquet, Feather, CSV, JSON, Avro, ORC)
 
 ## Installation
