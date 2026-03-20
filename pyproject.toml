@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arrow_modules"
+version = "0.1.0"
+description = "Arrow-based pipeline accelerators for databases and cloud storage"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Vinicius Freitas", email = "engvinifreitas@gmail.com"}
+]
+keywords = ["pyarrow", "ETL", "cloud-storage", "databases", "pipeline"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+
+# Core dependencies
+dependencies = [
+    "boto3==1.42.57",
+    "azure-storage-blob==12.28.0",
+    "google-cloud-storage==3.9.0",
+    "pyarrow==23.0.1",
+    "pandas==3.0.1",
+    "SQLAlchemy==2.0.47",
+    "PyMySQL==1.1.2"
+    # Add psycopg2-binary for PostgreSQL if needed
+]
+
+[project.urls]
+Homepage = "https://github.com/Viniz3/arrow_modules"
+BugTracker = "https://github.com/Viniz3/arrow_modules/issues"
+Documentation = "https://github.com/Viniz3/arrow_modules#readme"
+
+[tool.setuptools.packages.find]
+where = ["arrow_modules"]
+exclude = ["tests*"]

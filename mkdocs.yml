@@ -1,0 +1,17 @@
+site_name: Arrow Modules
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Databases:
+      - Connector: database/connector.md
+      - Extractor: database/extractor.md
+  - Storage:
+      - Connector: storage/connector.md
+      - Extractor: storage/extractor.md
+  - Arrow Writer: arrow_writer.md
+
+plugins:
+  - search

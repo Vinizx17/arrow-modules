@@ -1,0 +1,12 @@
+# Include the README and LICENSE files
+include README.md
+include LICENSE
+
+# Include all Python source files in arrow_modules
+recursive-include arrow_modules *.py
+
+# Exclude test files
+recursive-exclude tests *
+
+# Optionally include type hints (if using .pyi files)
+recursive-include arrow_modules *.pyi
