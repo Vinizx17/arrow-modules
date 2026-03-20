@@ -28,7 +28,6 @@ dependencies = [
     "pandas==3.0.1",
     "SQLAlchemy==2.0.47",
     "PyMySQL==1.1.2"
-    # Add psycopg2-binary for PostgreSQL if needed
 ]
 
 [project.urls]
