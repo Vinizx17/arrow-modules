@@ -84,24 +84,6 @@ write_arrow_table(
     azure_blob_client=azure_client,
     container_or_bucket="my-container"
 )
-
-# ---------------------------
-# Scenario 3: S3 → Avro → S3
-# ---------------------------
-# Extract file from S3 to Arrow
-arrow_table_s3 = extract_s3_file_to_arrow(
-    s3_client=s3_client,
-    bucket="my-bucket",
-    key="raw_data/orders.csv",
-    file_format="csv",
-    chunk_size=10000
-)
-
-# Write back to S3 in Avro
-write_arrow_table(
-    table=arrow_table_s3,
-    destination_path="processed/orders.avro",
-    file_format="avro",
     storage_type="s3",
     s3_client=s3_client,
     container_or_bucket="my-bucket"
